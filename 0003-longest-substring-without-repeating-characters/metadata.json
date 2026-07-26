@@ -1,13 +1,13 @@
 {
   "difficulty": "Medium",
-  "language": "java",
-  "leetCodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/2082287100/",
-  "memory": "46.43\nMB",
+  "language": "python3",
+  "leetCodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/2082308070/",
+  "memory": "0.00\nMB",
   "problemId": 3,
   "runtime": "0 ms",
   "slug": "longest-substring-without-repeating-characters",
-  "sourceCode": "class Solution {\n    public int lengthOfLongestSubstring(String s) {\n        int left = 0;\n        int maxLength = 0;\n        HashSet<Character> charSet = new HashSet<>();\n\n        for (int right = 0; right < s.length(); right++) {\n            while (charSet.contains(s.charAt(right))) {\n                charSet.remove(s.charAt(left));\n                left++;\n            }\n\n            charSet.add(s.charAt(right));\n            maxLength = Math.max(maxLength, right - left + 1);\n        }\n\n        return maxLength;       \n    }\n}",
-  "submittedAt": "2026-07-26T16:23:19.677Z",
+  "sourceCode": "class Solution:\n    def lengthOfLongestSubstring(self, s: str) -> int:\n        left = max_length = 0\n        char_set = set()\n        \n        for right in range(len(s)):\n            while s[right] in char_set:\n                char_set.remove(s[left])\n                left += 1\n\n            char_set.add(s[right])\n            max_length = max(max_length, right - left + 1)\n        \n        return max_length",
+  "submittedAt": "2026-07-26T16:38:57.819Z",
   "title": "Reverse Integer",
   "topics": [
     "Math",
@@ -15,7 +15,7 @@
     "String",
     "Sliding Window"
   ],
-  "submissionDate": "2026-07-26T16:23:19.677Z",
+  "submissionDate": "2026-07-26T16:38:57.819Z",
   "folderName": "0003-longest-substring-without-repeating-characters",
-  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0003-longest-substring-without-repeating-characters/solution.java"
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0003-longest-substring-without-repeating-characters/solution.py"
 }

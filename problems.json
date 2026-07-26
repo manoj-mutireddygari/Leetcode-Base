@@ -73,5 +73,20 @@
     ],
     "solvedAt": "2026-07-26T16:23:19.677Z",
     "folderName": "0003-longest-substring-without-repeating-characters"
+  },
+  {
+    "id": 3,
+    "title": "Reverse Integer",
+    "slug": "longest-substring-without-repeating-characters",
+    "difficulty": "Medium",
+    "language": "python3",
+    "topics": [
+      "Math",
+      "Hash Table",
+      "String",
+      "Sliding Window"
+    ],
+    "solvedAt": "2026-07-26T16:38:57.819Z",
+    "folderName": "0003-longest-substring-without-repeating-characters"
   }
 ]

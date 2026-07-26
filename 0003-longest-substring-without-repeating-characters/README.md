@@ -3,9 +3,9 @@
 | Detail | Value |
 | --- | --- |
 | Difficulty | Medium |
-| Language | java |
+| Language | python3 |
 | Runtime | 0 ms |
-| Memory | 46.43
+| Memory | 0.00
 MB |
 
 ## Topics
@@ -18,5 +18,5 @@ See the accompanying solution file for the submitted implementation.
 
 ## Links
 
-- [LeetCode problem](https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/2082287100/)
-- [GitHub source](https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0003-longest-substring-without-repeating-characters/solution.java)
+- [LeetCode problem](https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/2082308070/)
+- [GitHub source](https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0003-longest-substring-without-repeating-characters/solution.py)
