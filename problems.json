@@ -1,5 +1,21 @@
 [
   {
+    "id": 1,
+    "title": "Add Two Numbers",
+    "slug": "two-sum",
+    "difficulty": "Easy",
+    "language": "python3",
+    "topics": [
+      "Linked List",
+      "Math",
+      "Recursion",
+      "Array",
+      "Hash Table"
+    ],
+    "solvedAt": "2026-07-26T11:15:38.490Z",
+    "folderName": "0001-two-sum"
+  },
+  {
     "id": 2,
     "title": "Add Two Numbers",
     "slug": "add-two-numbers",

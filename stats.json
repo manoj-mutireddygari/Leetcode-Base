@@ -1,20 +1,22 @@
 {
-  "totalSolved": 1,
-  "easy": 0,
+  "totalSolved": 2,
+  "easy": 1,
   "medium": 1,
   "hard": 0,
   "currentStreak": 1,
   "longestStreak": 1,
   "languages": {
-    "python3": 1
+    "python3": 2
   },
   "topics": {
-    "Linked List": 1,
-    "Math": 1,
-    "Recursion": 1
+    "Linked List": 2,
+    "Math": 2,
+    "Recursion": 2,
+    "Array": 1,
+    "Hash Table": 1
   },
+  "lastSolved": "2026-07-26T11:15:38.490Z",
   "monthlySolves": {
-    "2026-07": 1
-  },
-  "lastSolved": "2026-07-26T11:13:19.416Z"
+    "2026-07": 2
+  }
 }
