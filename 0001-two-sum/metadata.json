@@ -1,13 +1,13 @@
 {
   "difficulty": "Easy",
-  "language": "python3",
-  "leetCodeUrl": "https://leetcode.com/problems/two-sum/submissions/2081939558/",
-  "memory": "Memory",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/two-sum/submissions/2081941953/",
+  "memory": "46.80\nMB",
   "problemId": 1,
   "runtime": "0 ms",
   "slug": "two-sum",
-  "sourceCode": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        for i in range(len(nums)):\n            for j in range(i + 1, len(nums)):\n                if nums[j] == target - nums[i]:\n                    return [i, j]\n        # Return an empty list if no solution is found\n        return []",
-  "submittedAt": "2026-07-26T11:15:38.490Z",
+  "sourceCode": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        Map<Integer, Integer> map = new HashMap<>();\n        for (int i = 0; i < nums.length; i++) {\n            map.put(nums[i], i);\n        }\n        for (int i = 0; i < nums.length; i++) {\n            int complement = target - nums[i];\n            if (map.containsKey(complement) && map.get(complement) != i) {\n                return new int[] { i, map.get(complement) };\n            }\n        }\n        // In case there is no solution, return an empty array\n        return new int[] {};\n    }\n}",
+  "submittedAt": "2026-07-26T11:17:57.859Z",
   "title": "Add Two Numbers",
   "topics": [
     "Linked List",
@@ -16,7 +16,7 @@
     "Array",
     "Hash Table"
   ],
-  "submissionDate": "2026-07-26T11:15:38.490Z",
+  "submissionDate": "2026-07-26T11:17:57.859Z",
   "folderName": "0001-two-sum",
-  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0001-two-sum/solution.py"
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0001-two-sum/solution.java"
 }
