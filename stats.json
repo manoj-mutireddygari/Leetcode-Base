@@ -1,24 +1,26 @@
 {
-  "totalSolved": 4,
+  "totalSolved": 5,
   "easy": 2,
-  "medium": 2,
+  "medium": 3,
   "hard": 0,
   "currentStreak": 1,
   "longestStreak": 1,
   "languages": {
     "python3": 2,
     "javascript": 1,
-    "java": 1
+    "java": 2
   },
   "topics": {
     "Linked List": 4,
-    "Math": 4,
+    "Math": 5,
     "Recursion": 4,
     "Array": 2,
-    "Hash Table": 2
+    "Hash Table": 3,
+    "String": 1,
+    "Sliding Window": 1
   },
-  "lastSolved": "2026-07-26T11:17:57.859Z",
+  "lastSolved": "2026-07-26T16:23:19.677Z",
   "monthlySolves": {
-    "2026-07": 4
+    "2026-07": 5
   }
 }
