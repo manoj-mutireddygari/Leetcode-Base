@@ -1,20 +1,20 @@
 {
   "difficulty": "Medium",
-  "language": "python3",
-  "leetCodeUrl": "https://leetcode.com/problems/add-two-numbers/submissions/2081937183/",
-  "memory": "19.30\nMB",
+  "language": "javascript",
+  "leetCodeUrl": "https://leetcode.com/problems/add-two-numbers/submissions/2081940816/",
+  "memory": "61.05\nMB",
   "problemId": 2,
-  "runtime": "3\nms",
+  "runtime": "0 ms",
   "slug": "add-two-numbers",
-  "sourceCode": "class Solution:\n    def addTwoNumbers(\n        self, l1: Optional[ListNode], l2: Optional[ListNode]\n    ) -> Optional[ListNode]:\n        dummyHead = ListNode(0)\n        curr = dummyHead\n        carry = 0\n        while l1 != None or l2 != None or carry != 0:\n            l1Val = l1.val if l1 else 0\n            l2Val = l2.val if l2 else 0\n            columnSum = l1Val + l2Val + carry\n            carry = columnSum // 10\n            newNode = ListNode(columnSum % 10)\n            curr.next = newNode\n            curr = newNode\n            l1 = l1.next if l1 else None\n            l2 = l2.next if l2 else None\n        return dummyHead.next",
-  "submittedAt": "2026-07-26T11:13:19.416Z",
+  "sourceCode": "var addTwoNumbers = function (l1, l2) {\n    let dummyHead = new ListNode(0);\n    let curr = dummyHead;\n    let carry = 0;\n    while (l1 !== null || l2 !== null || carry !== 0) {\n        let x = l1 !== null ? l1.val : 0;\n        let y = l2 !== null ? l2.val : 0;\n        let sum = carry + x + y;\n        carry = Math.floor(sum / 10);\n        curr.next = new ListNode(sum % 10);\n        curr = curr.next;\n        if (l1 !== null) l1 = l1.next;\n        if (l2 !== null) l2 = l2.next;\n    }\n    return dummyHead.next;\n};",
+  "submittedAt": "2026-07-26T11:16:49.645Z",
   "title": "Add Two Numbers",
   "topics": [
     "Linked List",
     "Math",
     "Recursion"
   ],
-  "submissionDate": "2026-07-26T11:13:19.416Z",
+  "submissionDate": "2026-07-26T11:16:49.645Z",
   "folderName": "0002-add-two-numbers",
-  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0002-add-two-numbers/solution.py"
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0002-add-two-numbers/solution.js"
 }

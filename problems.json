@@ -28,5 +28,19 @@
     ],
     "solvedAt": "2026-07-26T11:13:19.416Z",
     "folderName": "0002-add-two-numbers"
+  },
+  {
+    "id": 2,
+    "title": "Add Two Numbers",
+    "slug": "add-two-numbers",
+    "difficulty": "Medium",
+    "language": "javascript",
+    "topics": [
+      "Linked List",
+      "Math",
+      "Recursion"
+    ],
+    "solvedAt": "2026-07-26T11:16:49.645Z",
+    "folderName": "0002-add-two-numbers"
   }
 ]
