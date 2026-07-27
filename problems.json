@@ -119,6 +119,20 @@
     "folderName": "0867-transpose-matrix"
   },
   {
+    "id": 1464,
+    "title": "Maximum Product of Two Elements in an Array",
+    "slug": "maximum-product-of-two-elements-in-an-array",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Sorting",
+      "Heap (Priority Queue)"
+    ],
+    "solvedAt": "2026-07-27T18:24:52.407Z",
+    "folderName": "1464-maximum-product-of-two-elements-in-an-array"
+  },
+  {
     "id": 1929,
     "title": "Concatenation of Array",
     "slug": "concatenation-of-array",
