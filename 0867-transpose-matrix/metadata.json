@@ -1,0 +1,20 @@
+{
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/transpose-matrix/submissions/2083788224/",
+  "memory": "47.03\nMB",
+  "problemId": 867,
+  "runtime": "0 ms",
+  "slug": "transpose-matrix",
+  "sourceCode": "class Solution {\n    public int[][] transpose(int[][] matrix) {\n        int rows=matrix.length;\n        int columns=matrix[0].length;\n\n        int [][] transpose= new int[columns][rows];\n\n        for(int i=0;i<rows;i++){\n            for(int j=0;j<columns;j++){\n                transpose[j][i]=matrix[i][j];\n            }\n        }\n        return transpose;\n    }\n}",
+  "submittedAt": "2026-07-27T18:01:20.408Z",
+  "title": "Transpose Matrix",
+  "topics": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "submissionDate": "2026-07-27T18:01:20.408Z",
+  "folderName": "0867-transpose-matrix",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0867-transpose-matrix/solution.java"
+}

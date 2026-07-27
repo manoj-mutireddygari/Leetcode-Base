@@ -103,5 +103,19 @@
     ],
     "solvedAt": "2026-07-27T14:40:56.871Z",
     "folderName": "0004-median-of-two-sorted-arrays"
+  },
+  {
+    "id": 867,
+    "title": "Transpose Matrix",
+    "slug": "transpose-matrix",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Matrix",
+      "Simulation"
+    ],
+    "solvedAt": "2026-07-27T18:01:20.408Z",
+    "folderName": "0867-transpose-matrix"
   }
 ]
