@@ -88,5 +88,20 @@
     ],
     "solvedAt": "2026-07-26T16:38:57.819Z",
     "folderName": "0003-longest-substring-without-repeating-characters"
+  },
+  {
+    "id": 4,
+    "title": "Reverse Integer",
+    "slug": "median-of-two-sorted-arrays",
+    "difficulty": "Hard",
+    "language": "python3",
+    "topics": [
+      "Math",
+      "Array",
+      "Binary Search",
+      "Divide and Conquer"
+    ],
+    "solvedAt": "2026-07-27T14:40:56.871Z",
+    "folderName": "0004-median-of-two-sorted-arrays"
   }
 ]
