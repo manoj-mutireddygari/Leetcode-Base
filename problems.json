@@ -117,5 +117,18 @@
     ],
     "solvedAt": "2026-07-27T18:01:20.408Z",
     "folderName": "0867-transpose-matrix"
+  },
+  {
+    "id": 1929,
+    "title": "Concatenation of Array",
+    "slug": "concatenation-of-array",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Simulation"
+    ],
+    "solvedAt": "2026-07-27T18:15:58.292Z",
+    "folderName": "1929-concatenation-of-array"
   }
 ]

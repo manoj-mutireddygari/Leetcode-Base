@@ -1,0 +1,19 @@
+{
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/concatenation-of-array/submissions/2083809838/",
+  "memory": "Memory",
+  "problemId": 1929,
+  "runtime": "0 ms",
+  "slug": "concatenation-of-array",
+  "sourceCode": "class Solution {\n    public int[] getConcatenation(int[] nums) {\n        int len=nums.length;\n        int[]new_list=new int[len*2];\n        int i=2;\n        int a=0;\n        while(i>=1){\n            for(int j=0;j<len;j++){\n                new_list[a]=nums[j];\n                a++;\n            }\n            i--;\n        }\n        return new_list;\n    }\n}",
+  "submittedAt": "2026-07-27T18:15:58.292Z",
+  "title": "Concatenation of Array",
+  "topics": [
+    "Array",
+    "Simulation"
+  ],
+  "submissionDate": "2026-07-27T18:15:58.292Z",
+  "folderName": "1929-concatenation-of-array",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/1929-concatenation-of-array/solution.java"
+}
