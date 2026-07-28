@@ -158,5 +158,19 @@
     ],
     "solvedAt": "2026-07-28T14:05:25.714Z",
     "folderName": "3517-smallest-palindromic-rearrangement-i"
+  },
+  {
+    "id": 3517,
+    "title": "Smallest Palindromic Rearrangement I",
+    "slug": "smallest-palindromic-rearrangement-i",
+    "difficulty": "Medium",
+    "language": "python",
+    "topics": [
+      "String",
+      "Sorting",
+      "Counting Sort"
+    ],
+    "solvedAt": "2026-07-28T14:17:24.045Z",
+    "folderName": "3517-smallest-palindromic-rearrangement-i"
   }
 ]
