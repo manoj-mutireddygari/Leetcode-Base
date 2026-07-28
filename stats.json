@@ -1,14 +1,14 @@
 {
-  "totalSolved": 10,
+  "totalSolved": 11,
   "easy": 5,
-  "medium": 4,
+  "medium": 5,
   "hard": 1,
-  "currentStreak": 2,
-  "longestStreak": 2,
+  "currentStreak": 3,
+  "longestStreak": 3,
   "languages": {
     "python3": 4,
     "javascript": 1,
-    "java": 5
+    "java": 6
   },
   "topics": {
     "Linked List": 4,
@@ -16,17 +16,18 @@
     "Recursion": 4,
     "Array": 6,
     "Hash Table": 4,
-    "String": 2,
+    "String": 3,
     "Sliding Window": 2,
     "Binary Search": 1,
     "Divide and Conquer": 1,
     "Matrix": 1,
     "Simulation": 2,
-    "Sorting": 1,
-    "Heap (Priority Queue)": 1
+    "Sorting": 2,
+    "Heap (Priority Queue)": 1,
+    "Counting Sort": 1
   },
-  "lastSolved": "2026-07-27T18:24:52.407Z",
+  "lastSolved": "2026-07-28T14:05:25.714Z",
   "monthlySolves": {
-    "2026-07": 10
+    "2026-07": 11
   }
 }

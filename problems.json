@@ -144,5 +144,19 @@
     ],
     "solvedAt": "2026-07-27T18:15:58.292Z",
     "folderName": "1929-concatenation-of-array"
+  },
+  {
+    "id": 3517,
+    "title": "Smallest Palindromic Rearrangement I",
+    "slug": "smallest-palindromic-rearrangement-i",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "String",
+      "Sorting",
+      "Counting Sort"
+    ],
+    "solvedAt": "2026-07-28T14:05:25.714Z",
+    "folderName": "3517-smallest-palindromic-rearrangement-i"
   }
 ]
