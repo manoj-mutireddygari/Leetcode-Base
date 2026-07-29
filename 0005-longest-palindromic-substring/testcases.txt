@@ -1,0 +1,13 @@
+Case 1:
+Status: Passed
+Input:
+s = "babad"
+Output = "bab"
+Expected = "bab"
+
+Case 2:
+Status: Passed
+Input:
+s = "cbbd"
+Output = "bb"
+Expected = "bb"

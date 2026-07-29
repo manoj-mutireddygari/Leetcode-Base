@@ -105,6 +105,20 @@
     "folderName": "0004-median-of-two-sorted-arrays"
   },
   {
+    "id": 5,
+    "title": "Longest Palindromic Substring",
+    "slug": "longest-palindromic-substring",
+    "difficulty": "Medium",
+    "language": "python3",
+    "topics": [
+      "Two Pointers",
+      "String",
+      "Dynamic Programming"
+    ],
+    "solvedAt": "2026-07-29T20:18:56.895Z",
+    "folderName": "0005-longest-palindromic-substring"
+  },
+  {
     "id": 6,
     "title": "Zigzag Conversion",
     "slug": "zigzag-conversion",
