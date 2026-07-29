@@ -117,6 +117,18 @@
     "folderName": "0006-zigzag-conversion"
   },
   {
+    "id": 6,
+    "title": "Zigzag Conversion",
+    "slug": "zigzag-conversion",
+    "difficulty": "Medium",
+    "language": "python3",
+    "topics": [
+      "String"
+    ],
+    "solvedAt": "2026-07-29T20:15:15.922Z",
+    "folderName": "0006-zigzag-conversion"
+  },
+  {
     "id": 867,
     "title": "Transpose Matrix",
     "slug": "transpose-matrix",
