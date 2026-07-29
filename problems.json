@@ -172,5 +172,21 @@
     ],
     "solvedAt": "2026-07-28T14:17:24.045Z",
     "folderName": "3517-smallest-palindromic-rearrangement-i"
+  },
+  {
+    "id": 3518,
+    "title": "Smallest Palindromic Rearrangement II",
+    "slug": "smallest-palindromic-rearrangement-ii",
+    "difficulty": "Hard",
+    "language": "java",
+    "topics": [
+      "Hash Table",
+      "Math",
+      "String",
+      "Combinatorics",
+      "Counting"
+    ],
+    "solvedAt": "2026-07-29T18:13:29.063Z",
+    "folderName": "3518-smallest-palindromic-rearrangement-ii"
   }
 ]

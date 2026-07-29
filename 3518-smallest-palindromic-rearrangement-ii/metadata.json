@@ -1,0 +1,22 @@
+{
+  "difficulty": "Hard",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/submissions/2086565641/",
+  "memory": "47.39\nMB",
+  "problemId": 3518,
+  "runtime": "0 ms",
+  "slug": "smallest-palindromic-rearrangement-ii",
+  "sourceCode": "class Solution {\n\n    private long comb(long n, long m, long k) {\n        long res = 1;\n        m = Math.min(m, n - m);\n\n        for (long i = 1; i <= m; i++) {\n            res = (res * (n - i + 1)) / i;\n            if (res > k) {\n                return k + 1;\n            }\n        }\n        return res;\n    }\n\n    private long permutations(int rem, int[] bucket, long k) {\n        long ways = 1;\n        for (int i = 0; i < 26; i++) {\n            if (bucket[i] == 0) {\n                continue;\n            }\n\n            ways *= comb(rem, bucket[i], k);\n            if (ways > k) {\n                break;\n            }\n            rem -= bucket[i];\n        }\n        return ways;\n    }\n\n    public String smallestPalindrome(String s, long k) {\n        int partition = s.length() / 2;\n        int[] bucket = new int[26];\n\n        for (int i = 0; i < partition; i++) {\n            bucket[s.charAt(i) - 97] += 1;\n        }\n\n        StringBuilder left = new StringBuilder();\n        long startIndex = 1;\n\n        for (int pos = 0; pos < partition; pos++) {\n            for (int i = 0; i < 26; i++) {\n                if (bucket[i] == 0) {\n                    continue;\n                }\n\n                bucket[i] -= 1;\n\n                long ways = permutations(partition - pos - 1, bucket, k);\n                if (startIndex + ways > k) {\n                    left.append((char) (i + 97));\n                    break;\n                }\n\n                bucket[i] += 1;\n                startIndex += ways;\n            }\n        }\n\n        if (left.length() < partition) {\n            return \"\";\n        }\n\n        if (s.length() % 2 != 0) {\n            left.append(s.charAt(partition));\n        }\n\n        for (int i = partition - 1; i >= 0; i--) {\n            left.append(left.charAt(i));\n        }\n\n        return left.toString();\n    }\n}",
+  "submittedAt": "2026-07-29T18:13:29.063Z",
+  "title": "Smallest Palindromic Rearrangement II",
+  "topics": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Combinatorics",
+    "Counting"
+  ],
+  "submissionDate": "2026-07-29T18:13:29.063Z",
+  "folderName": "3518-smallest-palindromic-rearrangement-ii",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/3518-smallest-palindromic-rearrangement-ii/solution.java"
+}
