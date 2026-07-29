@@ -1,0 +1,19 @@
+{
+  "difficulty": "Medium",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/zigzag-conversion/submissions/2086674953/",
+  "memory": "0.00\nMB",
+  "problemId": 6,
+  "runtime": "0\nms",
+  "slug": "zigzag-conversion",
+  "sourceCode": "class Solution {\n    public String convert(String s, int numRows) {\n       if (numRows == 1 || numRows >= s.length()) {\n            return s;\n        }\n\n        int idx = 0, d = 1;\n        List<Character>[] rows = new ArrayList[numRows];\n        for (int i = 0; i < numRows; i++) {\n            rows[i] = new ArrayList<>();\n        }\n\n        for (char c : s.toCharArray()) {\n            rows[idx].add(c);\n            if (idx == 0) {\n                d = 1;\n            } else if (idx == numRows - 1) {\n                d = -1;\n            }\n            idx += d;\n        }\n\n        StringBuilder result = new StringBuilder();\n        for (List<Character> row : rows) {\n            for (char c : row) {\n                result.append(c);\n            }\n        }\n\n        return result.toString();        \n    }\n}",
+  "submittedAt": "2026-07-29T20:07:26.928Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\ns = \"PAYPALISHIRING\"\nnumRows = 3\nOutput = &quot;PAHNAPLSIIGYIR&quot;\nExpected = &quot;PAHNAPLSIIGYIR&quot;\n\nCase 2:\nStatus: Passed\nInput:\ns = \"PAYPALISHIRING\"\nnumRows = 4\nOutput = &quot;PINALSIGYAHRPI&quot;\nExpected = &quot;PINALSIGYAHRPI&quot;\n\nCase 3:\nStatus: Passed\nInput:\ns = \"A\"\nnumRows = 1\nOutput = &quot;A&quot;\nExpected = &quot;A&quot;",
+  "title": "Zigzag Conversion",
+  "topics": [
+    "String"
+  ],
+  "submissionDate": "2026-07-29T20:07:26.928Z",
+  "folderName": "0006-zigzag-conversion",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0006-zigzag-conversion/solution.java"
+}

@@ -105,6 +105,18 @@
     "folderName": "0004-median-of-two-sorted-arrays"
   },
   {
+    "id": 6,
+    "title": "Zigzag Conversion",
+    "slug": "zigzag-conversion",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "String"
+    ],
+    "solvedAt": "2026-07-29T20:07:26.928Z",
+    "folderName": "0006-zigzag-conversion"
+  },
+  {
     "id": 867,
     "title": "Transpose Matrix",
     "slug": "transpose-matrix",

@@ -1,0 +1,23 @@
+Case 1:
+Status: Passed
+Input:
+s = "PAYPALISHIRING"
+numRows = 3
+Output = &quot;PAHNAPLSIIGYIR&quot;
+Expected = &quot;PAHNAPLSIIGYIR&quot;
+
+Case 2:
+Status: Passed
+Input:
+s = "PAYPALISHIRING"
+numRows = 4
+Output = &quot;PINALSIGYAHRPI&quot;
+Expected = &quot;PINALSIGYAHRPI&quot;
+
+Case 3:
+Status: Passed
+Input:
+s = "A"
+numRows = 1
+Output = &quot;A&quot;
+Expected = &quot;A&quot;
