@@ -119,6 +119,20 @@
     "folderName": "0005-longest-palindromic-substring"
   },
   {
+    "id": 5,
+    "title": "Longest Palindromic Substring",
+    "slug": "longest-palindromic-substring",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Two Pointers",
+      "String",
+      "Dynamic Programming"
+    ],
+    "solvedAt": "2026-07-29T20:20:19.558Z",
+    "folderName": "0005-longest-palindromic-substring"
+  },
+  {
     "id": 6,
     "title": "Zigzag Conversion",
     "slug": "zigzag-conversion",
