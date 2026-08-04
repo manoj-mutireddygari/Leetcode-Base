@@ -1,14 +1,14 @@
 {
-  "totalSolved": 17,
+  "totalSolved": 18,
   "easy": 5,
-  "medium": 10,
+  "medium": 11,
   "hard": 2,
-  "currentStreak": 4,
+  "currentStreak": 1,
   "longestStreak": 4,
   "languages": {
     "python3": 6,
     "javascript": 1,
-    "java": 9,
+    "java": 10,
     "python": 1
   },
   "topics": {
@@ -17,7 +17,7 @@
     "Recursion": 4,
     "Array": 6,
     "Hash Table": 5,
-    "String": 9,
+    "String": 10,
     "Sliding Window": 2,
     "Binary Search": 1,
     "Divide and Conquer": 1,
@@ -31,8 +31,9 @@
     "Two Pointers": 2,
     "Dynamic Programming": 2
   },
-  "lastSolved": "2026-07-29T20:20:19.558Z",
+  "lastSolved": "2026-08-04T04:45:44.657Z",
   "monthlySolves": {
-    "2026-07": 17
+    "2026-07": 17,
+    "2026-08": 1
   }
 }

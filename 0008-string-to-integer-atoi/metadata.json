@@ -1,0 +1,19 @@
+{
+  "difficulty": "Medium",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/string-to-integer-atoi/submissions/2093443402/",
+  "memory": "Memory",
+  "problemId": 8,
+  "runtime": "0 ms",
+  "slug": "string-to-integer-atoi",
+  "sourceCode": "class Solution {\n    public int myAtoi(String s) {\n        if (s == null || s.length() == 0) {\n            return 0;\n        }\n        \n        // Constants for 32-bit signed integer range\n        final int INT_MAX = Integer.MAX_VALUE;\n        final int INT_MIN = Integer.MIN_VALUE;\n        \n        int i = 0;\n        int n = s.length();\n        \n        // Step 1: Skip leading whitespace\n        while (i < n && s.charAt(i) == ' ') {\n            i++;\n        }\n        \n        // Check if we've reached the end\n        if (i == n) {\n            return 0;\n        }\n        \n        // Step 2: Check for sign\n        int sign = 1;\n        if (s.charAt(i) == '+') {\n            i++;\n        } else if (s.charAt(i) == '-') {\n            sign = -1;\n            i++;\n        }\n        \n        // Step 3: Read digits and convert\n        long res = 0;\n        while (i < n && Character.isDigit(s.charAt(i))) {\n            int digit = s.charAt(i) - '0';\n            res = res * 10 + digit;\n            \n            if (sign * res <= INT_MIN) {\n                return INT_MIN;\n            }\n            if (sign * res >= INT_MAX) {\n                return INT_MAX;\n            }\n            \n            i++;\n        }\n        \n        // Step 4: Apply sign and return\n        return (int)(res * sign);        \n    }\n}",
+  "submittedAt": "2026-08-04T04:45:44.657Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\ns = \"42\"\nOutput = 42\nExpected = 42\n\nCase 2:\nStatus: Passed\nInput:\ns = \"   -042\"\nOutput = -42\nExpected = -42\n\nCase 3:\nStatus: Passed\nInput:\ns = \"1337c0d3\"\nOutput = 1337\nExpected = 1337\n\nCase 4:\nStatus: Passed\nInput:\ns = \"0-1\"\nOutput = 0\nExpected = 0\n\nCase 5:\nStatus: Passed\nInput:\ns = \"words and 987\"\nOutput = 0\nExpected = 0",
+  "title": "String to Integer (atoi)",
+  "topics": [
+    "String"
+  ],
+  "submissionDate": "2026-08-04T04:45:44.657Z",
+  "folderName": "0008-string-to-integer-atoi",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0008-string-to-integer-atoi/solution.java"
+}

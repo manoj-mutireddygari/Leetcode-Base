@@ -157,6 +157,18 @@
     "folderName": "0006-zigzag-conversion"
   },
   {
+    "id": 8,
+    "title": "String to Integer (atoi)",
+    "slug": "string-to-integer-atoi",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "String"
+    ],
+    "solvedAt": "2026-08-04T04:45:44.657Z",
+    "folderName": "0008-string-to-integer-atoi"
+  },
+  {
     "id": 867,
     "title": "Transpose Matrix",
     "slug": "transpose-matrix",
