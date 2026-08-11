@@ -1,0 +1,20 @@
+{
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/reverse-string-ii/submissions/2102676097/",
+  "memory": "Memory",
+  "problemId": 541,
+  "runtime": "0 ms",
+  "slug": "reverse-string-ii",
+  "sourceCode": "class Solution {\n    public String reverseStr(String s, int k) {\n\n        char[] arr = s.toCharArray();\n\n        for (int start = 0; start < arr.length; start += 2 * k) {\n\n            int left = start;\n            int right = Math.min(start + k - 1, arr.length - 1);\n\n            while (left < right) {\n                char temp = arr[left];\n                arr[left] = arr[right];\n                arr[right] = temp;\n\n                left++;\n                right--;\n            }\n        }\n\n        return new String(arr);\n    }\n}",
+  "submittedAt": "2026-08-11T10:14:39.263Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\ns = \"abcdefg\"\nk = 2\nOutput = \"bacdfeg\"\nExpected = \"bacdfeg\"\n\nCase 2:\nStatus: Passed\nInput:\ns = \"abcd\"\nk = 2\nOutput = \"bacd\"\nExpected = \"bacd\"",
+  "title": "Reverse String II",
+  "topics": [
+    "Two Pointers",
+    "String"
+  ],
+  "submissionDate": "2026-08-11T10:14:39.263Z",
+  "folderName": "0541-reverse-string-ii",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0541-reverse-string-ii/solution.java"
+}

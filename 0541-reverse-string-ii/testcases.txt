@@ -1,0 +1,15 @@
+Case 1:
+Status: Passed
+Input:
+s = "abcdefg"
+k = 2
+Output = "bacdfeg"
+Expected = "bacdfeg"
+
+Case 2:
+Status: Passed
+Input:
+s = "abcd"
+k = 2
+Output = "bacd"
+Expected = "bacd"
