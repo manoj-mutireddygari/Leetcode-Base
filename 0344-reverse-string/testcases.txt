@@ -1,0 +1,13 @@
+Case 1:
+Status: Passed
+Input:
+s = ["h","e","l","l","o"]
+Output = ["o","l","l","e","h"]
+Expected = ["o","l","l","e","h"]
+
+Case 2:
+Status: Passed
+Input:
+s = ["H","a","n","n","a","h"]
+Output = ["h","a","n","n","a","H"]
+Expected = ["h","a","n","n","a","H"]

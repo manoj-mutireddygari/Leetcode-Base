@@ -169,6 +169,19 @@
     "folderName": "0008-string-to-integer-atoi"
   },
   {
+    "id": 344,
+    "title": "Reverse String",
+    "slug": "reverse-string",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Two Pointers",
+      "String"
+    ],
+    "solvedAt": "2026-08-11T09:31:00.407Z",
+    "folderName": "0344-reverse-string"
+  },
+  {
     "id": 867,
     "title": "Transpose Matrix",
     "slug": "transpose-matrix",
