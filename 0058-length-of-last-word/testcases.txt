@@ -1,0 +1,20 @@
+Case 1:
+Status: Passed
+Input:
+s = "Hello World"
+Output = 5
+Expected = 5
+
+Case 2:
+Status: Passed
+Input:
+s = "   fly me   to   the moon  "
+Output = 4
+Expected = 4
+
+Case 3:
+Status: Passed
+Input:
+s = "luffy is still joyboy"
+Output = 6
+Expected = 6
