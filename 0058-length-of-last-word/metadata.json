@@ -1,19 +1,19 @@
 {
   "difficulty": "Easy",
   "language": "java",
-  "leetCodeUrl": "https://leetcode.com/problems/length-of-last-word/submissions/2104279421/",
+  "leetCodeUrl": "https://leetcode.com/problems/length-of-last-word/submissions/2104281809/",
   "memory": "Memory",
   "problemId": 58,
   "runtime": "0 ms",
   "slug": "length-of-last-word",
-  "sourceCode": "class Solution {\n    public int lengthOfLastWord(String s) {\n        char []arr=s.toCharArray();\n        int t =arr.length;\n        int count=0;\n        while(t>0){\n            if(arr[t]==' '){\n                    t--;\n            }else if(arr[t]!=' '){\n                while(t >= 0 && arr[t]!=' '){\n                    count++;\n                    t--;\n                }\n                break;\n            }\n        }\n        return count;\n    }\n}",
-  "submittedAt": "2026-08-12T14:14:21.455Z",
+  "sourceCode": "class Solution {\n    public int lengthOfLastWord(String s) {\n        char []arr=s.toCharArray();\n        int t =arr.length-1;\n        int count=0;\n        while(t>=0){\n            if(arr[t]==' '){\n                    t--;\n            }else if(arr[t]!=' '){\n                while(t >= 0 && arr[t]!=' '){\n                    count++;\n                    t--;\n                }\n                break;\n            }\n        }\n        return count;\n    }\n}",
+  "submittedAt": "2026-08-12T14:16:16.879Z",
   "testCases": "Case 1:\nStatus: Passed\nInput:\ns = \"Hello World\"\nOutput = 5\nExpected = 5\n\nCase 2:\nStatus: Passed\nInput:\ns = \"   fly me   to   the moon  \"\nOutput = 4\nExpected = 4\n\nCase 3:\nStatus: Passed\nInput:\ns = \"luffy is still joyboy\"\nOutput = 6\nExpected = 6",
   "title": "Length of Last Word",
   "topics": [
     "String"
   ],
-  "submissionDate": "2026-08-12T14:14:21.455Z",
+  "submissionDate": "2026-08-12T14:16:16.879Z",
   "folderName": "0058-length-of-last-word",
   "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0058-length-of-last-word/solution.java"
 }
