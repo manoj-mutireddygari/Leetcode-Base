@@ -3,7 +3,7 @@ class Solution {
         char []arr=s.toCharArray();
         int t =arr.length;
         int count=0;
-        while(t-->0){
+        while(t>0){
             if(arr[t]==' '){
                     t--;
             }else if(arr[t]!=' '){

@@ -17,5 +17,5 @@ See the accompanying solution file for the submitted implementation.
 
 ## Links
 
-- [LeetCode problem](https://leetcode.com/problems/length-of-last-word/submissions/2104276980/)
+- [LeetCode problem](https://leetcode.com/problems/length-of-last-word/submissions/2104279421/)
 - [GitHub source](https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0058-length-of-last-word/solution.java)
