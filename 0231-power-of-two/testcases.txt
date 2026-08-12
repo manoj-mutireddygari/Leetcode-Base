@@ -1,0 +1,20 @@
+Case 1:
+Status: Passed
+Input:
+n = 1
+Output = true
+Expected = true
+
+Case 2:
+Status: Passed
+Input:
+n = 16
+Output = true
+Expected = true
+
+Case 3:
+Status: Passed
+Input:
+n = 3
+Output = false
+Expected = false

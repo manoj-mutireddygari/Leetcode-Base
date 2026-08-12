@@ -181,6 +181,20 @@
     "folderName": "0058-length-of-last-word"
   },
   {
+    "id": 231,
+    "title": "Power of Two",
+    "slug": "power-of-two",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Math",
+      "Bit Manipulation",
+      "Recursion"
+    ],
+    "solvedAt": "2026-08-12T15:33:04.953Z",
+    "folderName": "0231-power-of-two"
+  },
+  {
     "id": 344,
     "title": "Reverse String",
     "slug": "reverse-string",
