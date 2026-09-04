@@ -17,5 +17,5 @@ See the accompanying solution file for the submitted implementation.
 
 ## Links
 
-- [LeetCode problem](https://leetcode.com/problems/power-of-two/submissions/2104377327/)
+- [LeetCode problem](https://leetcode.com/problems/power-of-two/submissions/2130587021/)
 - [GitHub source](https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0231-power-of-two/solution.java)
