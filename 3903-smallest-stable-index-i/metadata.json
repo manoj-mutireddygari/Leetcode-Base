@@ -1,0 +1,21 @@
+{
+  "description": "You are given an integer array `nums` of length `n` and an integer `k`.\n\nFor each index `i`, define its **instability score** as `max(nums[0..i]) - min(nums[i..n - 1])`.\n\nIn other words:\n\n- `max(nums[0..i])` is the **largest** value among the elements from index 0 to index `i`.\n\n- `min(nums[i..n - 1])` is the **smallest** value among the elements from index `i` to index `n - 1`.\n\nAn index `i` is called **stable** if its instability score is **less than or equal to** `k`.\n\nReturn the **smallest** stable index. If no such index exists, return -1.\n\nExample 1:\n\n**Input:** nums = [5,0,1,4], k = 3\n\n**Output:** 3\n\n**Explanation:**\n\n- At index 0: The maximum in `[5]` is 5, and the minimum in `[5, 0, 1, 4]` is 0, so the instability score is `5 - 0 = 5`.\n\n- At index 1: The maximum in `[5, 0]` is 5, and the minimum in `[0, 1, 4]` is 0, so the instability score is `5 - 0 = 5`.\n\n- At index 2: The maximum in `[5, 0, 1]` is 5, and the minimum in `[1, 4]` is 1, so the instability score is `5 - 1 = 4`.\n\n- At index 3: The maximum in `[5, 0, 1, 4]` is 5, and the minimum in `[4]` is 4, so the instability score is `5 - 4 = 1`.\n\n- This is the first index with an instability score less than or equal to `k = 3`. Thus, the answer is 3.\n\nExample 2:\n\n**Input:** nums = [3,2,1], k = 1\n\n**Output:** -1\n\n**Explanation:**\n\n- At index 0, the instability score is `3 - 1 = 2`.\n\n- At index 1, the instability score is `3 - 1 = 2`.\n\n- At index 2, the instability score is `3 - 1 = 2`.\n\n- None of these values is less than or equal to `k = 1`, so the answer is -1.\n\nExample 3:\n\n**Input:** nums = [0], k = 0\n\n**Output:** 0\n\n**Explanation:**\n\nAt index 0, the instability score is `0 - 0 = 0`, which is less than or equal to `k = 0`. Therefore, the answer is 0.\n\n**Constraints:**\n\n- `1 <= nums.length <= 100`\n\n- `0 <= nums[i] <= 10^9`\n\n- `0 <= k <= 10^9`",
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/smallest-stable-index-i/submissions/2130894176/",
+  "memory": "46.4 MB",
+  "problemId": 3903,
+  "runtime": "1 ms",
+  "slug": "smallest-stable-index-i",
+  "sourceCode": "class Solution {\n    public int firstStableIndex(int[] nums, int k) {\n        int n = nums.length;\n        int[] suffix = new int[n];\n \n        int mn = Integer.MAX_VALUE;\n        // Build suffix minimum\n        for (int i = n - 1; i >= 0; i--) {\n            mn = Math.min(mn, nums[i]);\n            suffix[i] = mn;\n        }\n \n        int mx = 0;\n        // Find first index with score <= k\n        for (int i = 0; i < n; i++) {\n            mx = Math.max(mx, nums[i]);\n            int score = mx - suffix[i];\n            if (score <= k)\n                return i;\n        }\n \n        return -1;\n    }\n}",
+  "submittedAt": "2026-09-04T16:17:18.998Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nnums = [5,0,1,4]\nk = 3\nOutput = 3\nExpected = 3\n\nCase 2:\nStatus: Passed\nInput:\nnums = [3,2,1]\nk = 1\nOutput = -1\nExpected = -1\n\nCase 3:\nStatus: Passed\nInput:\nnums = [0]\nk = 0\nOutput = 0\nExpected = 0",
+  "title": "Smallest Stable Index I",
+  "topics": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "submissionDate": "2026-09-04T16:17:18.998Z",
+  "folderName": "3903-smallest-stable-index-i",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/3903-smallest-stable-index-i/solution.java"
+}

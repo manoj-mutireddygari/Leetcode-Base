@@ -304,5 +304,18 @@
     ],
     "solvedAt": "2026-07-29T18:13:29.063Z",
     "folderName": "3518-smallest-palindromic-rearrangement-ii"
+  },
+  {
+    "id": 3903,
+    "title": "Smallest Stable Index I",
+    "slug": "smallest-stable-index-i",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Prefix Sum"
+    ],
+    "solvedAt": "2026-09-04T16:17:18.998Z",
+    "folderName": "3903-smallest-stable-index-i"
   }
 ]

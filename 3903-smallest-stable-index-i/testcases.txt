@@ -1,0 +1,23 @@
+Case 1:
+Status: Passed
+Input:
+nums = [5,0,1,4]
+k = 3
+Output = 3
+Expected = 3
+
+Case 2:
+Status: Passed
+Input:
+nums = [3,2,1]
+k = 1
+Output = -1
+Expected = -1
+
+Case 3:
+Status: Passed
+Input:
+nums = [0]
+k = 0
+Output = 0
+Expected = 0
