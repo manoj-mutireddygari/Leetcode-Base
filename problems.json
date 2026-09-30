@@ -387,6 +387,25 @@
     "folderName": "0938-range-sum-of-bst"
   },
   {
+    "id": 973,
+    "title": "K Closest Points to Origin",
+    "slug": "k-closest-points-to-origin",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Math",
+      "Divide and Conquer",
+      "Geometry",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Quickselect",
+      "K-D Tree"
+    ],
+    "solvedAt": "2026-09-30T09:23:38.738Z",
+    "folderName": "0973-k-closest-points-to-origin"
+  },
+  {
     "id": 1051,
     "title": "Height Checker",
     "slug": "height-checker",
