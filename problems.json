@@ -261,6 +261,20 @@
     "folderName": "0867-transpose-matrix"
   },
   {
+    "id": 905,
+    "title": "Sort Array By Parity",
+    "slug": "sort-array-by-parity",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "solvedAt": "2026-09-30T06:05:44.268Z",
+    "folderName": "0905-sort-array-by-parity"
+  },
+  {
     "id": 1464,
     "title": "Maximum Product of Two Elements in an Array",
     "slug": "maximum-product-of-two-elements-in-an-array",
