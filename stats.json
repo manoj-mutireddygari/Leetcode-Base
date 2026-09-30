@@ -1,14 +1,14 @@
 {
-  "totalSolved": 31,
+  "totalSolved": 32,
   "easy": 18,
-  "medium": 11,
+  "medium": 12,
   "hard": 2,
   "currentStreak": 1,
   "longestStreak": 4,
   "languages": {
     "python3": 6,
     "javascript": 1,
-    "java": 23,
+    "java": 24,
     "python": 1
   },
   "topics": {
@@ -32,12 +32,16 @@
     "Dynamic Programming": 2,
     "Bit Manipulation": 2,
     "Prefix Sum": 1,
-    "Interactive": 1
+    "Interactive": 1,
+    "Tree": 1,
+    "Depth-First Search": 1,
+    "Breadth-First Search": 1,
+    "Binary Tree": 1
   },
-  "lastSolved": "2026-09-30T06:45:05.629Z",
+  "lastSolved": "2026-09-30T06:47:04.379Z",
   "monthlySolves": {
     "2026-07": 17,
     "2026-08": 7,
-    "2026-09": 7
+    "2026-09": 8
   }
 }
