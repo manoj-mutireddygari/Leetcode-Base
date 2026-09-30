@@ -344,6 +344,19 @@
     "folderName": "0541-reverse-string-ii"
   },
   {
+    "id": 643,
+    "title": "Maximum Average Subarray I",
+    "slug": "maximum-average-subarray-i",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Sliding Window"
+    ],
+    "solvedAt": "2026-09-30T09:31:55.237Z",
+    "folderName": "0643-maximum-average-subarray-i"
+  },
+  {
     "id": 744,
     "title": "Find Smallest Letter Greater Than Target",
     "slug": "find-smallest-letter-greater-than-target",
