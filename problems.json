@@ -432,6 +432,20 @@
     "folderName": "0973-k-closest-points-to-origin"
   },
   {
+    "id": 977,
+    "title": "Squares of a Sorted Array",
+    "slug": "squares-of-a-sorted-array",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ],
+    "solvedAt": "2026-09-30T09:30:42.711Z",
+    "folderName": "0977-squares-of-a-sorted-array"
+  },
+  {
     "id": 1051,
     "title": "Height Checker",
     "slug": "height-checker",

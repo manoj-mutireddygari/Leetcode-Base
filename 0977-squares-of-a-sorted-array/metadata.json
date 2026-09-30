@@ -1,0 +1,22 @@
+{
+  "description": "Given an integer array `nums` sorted in **non-decreasing** order, return *an array of **the squares of each number** sorted in non-decreasing order*.\n\nExample 1:\n\n```\n\n**Input:** nums = [-4,-1,0,3,10]\n**Output:** [0,1,9,16,100]\n**Explanation:** After squaring, the array becomes [16,1,0,9,100].\nAfter sorting, it becomes [0,1,9,16,100].\n\n```\n\nExample 2:\n\n```\n\n**Input:** nums = [-7,-3,2,3,11]\n**Output:** [4,9,9,49,121]\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 10^4`\n\n- `-10^4 <= nums[i] <= 10^4`\n\n- `nums` is sorted in **non-decreasing** order.\n\n**Follow up:** Squaring each element and sorting the new array is very trivial, could you find an `O(n)` solution using a different approach?",
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/squares-of-a-sorted-array/submissions/2158011456/",
+  "memory": "47.2 MB",
+  "problemId": 977,
+  "runtime": "1 ms",
+  "slug": "squares-of-a-sorted-array",
+  "sourceCode": "class Solution {\n    public int[] sortedSquares(int[] nums) {\n        int[] res = new int[nums.length];\n        int left = 0;\n        int right = nums.length - 1;\n\n        for (int i = nums.length - 1; i >= 0; i--) {\n            if (Math.abs(nums[left]) > Math.abs(nums[right])) {\n                res[i] = nums[left] * nums[left];\n                left++;\n            } else {\n                res[i] = nums[right] * nums[right];\n                right--;\n            }\n        }\n        return res;        \n    }\n}",
+  "submittedAt": "2026-09-30T09:30:42.711Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nnums = [-4,-1,0,3,10]\nOutput = [0,1,9,16,100]\nExpected = [0,1,9,16,100]\n\nCase 2:\nStatus: Passed\nInput:\nnums = [-7,-3,2,3,11]\nOutput = [4,9,9,49,121]\nExpected = [4,9,9,49,121]",
+  "title": "Squares of a Sorted Array",
+  "topics": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "submissionDate": "2026-09-30T09:30:42.711Z",
+  "folderName": "0977-squares-of-a-sorted-array",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0977-squares-of-a-sorted-array/solution.java"
+}
