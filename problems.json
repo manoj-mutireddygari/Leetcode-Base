@@ -169,6 +169,19 @@
     "folderName": "0008-string-to-integer-atoi"
   },
   {
+    "id": 35,
+    "title": "Search Insert Position",
+    "slug": "search-insert-position",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "solvedAt": "2026-09-30T05:32:43.127Z",
+    "folderName": "0035-search-insert-position"
+  },
+  {
     "id": 58,
     "title": "Length of Last Word",
     "slug": "length-of-last-word",
