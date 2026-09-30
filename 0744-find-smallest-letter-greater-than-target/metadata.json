@@ -1,0 +1,21 @@
+{
+  "description": "You are given an array of characters `letters` that is sorted in **non-decreasing order**, and a character `target`. There are **at least two different** characters in `letters`.\n\nReturn *the smallest character in *`letters`* that is lexicographically greater than *`target`. If such a character does not exist, return the first character in `letters`.\n\nExample 1:\n\n```\n\n**Input:** letters = [\"c\",\"f\",\"j\"], target = \"a\"\n**Output:** \"c\"\n**Explanation:** The smallest character that is lexicographically greater than 'a' in letters is 'c'.\n\n```\n\nExample 2:\n\n```\n\n**Input:** letters = [\"c\",\"f\",\"j\"], target = \"c\"\n**Output:** \"f\"\n**Explanation:** The smallest character that is lexicographically greater than 'c' in letters is 'f'.\n\n```\n\nExample 3:\n\n```\n\n**Input:** letters = [\"x\",\"x\",\"y\",\"y\"], target = \"z\"\n**Output:** \"x\"\n**Explanation:** There are no characters in letters that is lexicographically greater than 'z' so we return letters[0].\n\n```\n\n**Constraints:**\n\n- `2 <= letters.length <= 10^4`\n\n- `letters[i]` is a lowercase English letter.\n\n- `letters` is sorted in **non-decreasing** order.\n\n- `letters` contains at least two different characters.\n\n- `target` is a lowercase English letter.",
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/submissions/2157998677/",
+  "memory": "42.4 MB",
+  "problemId": 744,
+  "runtime": "0 ms",
+  "slug": "find-smallest-letter-greater-than-target",
+  "sourceCode": "class Solution {\n    public char nextGreatestLetter(char[] letters, char target) {\n        int left = 0;\n        int right = letters.length - 1;\n\n        while (left <= right) {\n            int mid = left + (right - left) / 2;\n            if (letters[mid] <= target) {\n                left = mid + 1;\n            } else {\n                right = mid - 1;\n            }\n        }\n\n        return letters[left % letters.length];\n    }\n}",
+  "submittedAt": "2026-09-30T09:16:00.903Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nletters = [\"c\",\"f\",\"j\"]\ntarget = \"a\"\nOutput = \"c\"\nExpected = \"c\"\n\nCase 2:\nStatus: Passed\nInput:\nletters = [\"c\",\"f\",\"j\"]\ntarget = \"c\"\nOutput = \"f\"\nExpected = \"f\"\n\nCase 3:\nStatus: Passed\nInput:\nletters = [\"x\",\"x\",\"y\",\"y\"]\ntarget = \"z\"\nOutput = \"x\"\nExpected = \"x\"",
+  "title": "Find Smallest Letter Greater Than Target",
+  "topics": [
+    "Array",
+    "Binary Search"
+  ],
+  "submissionDate": "2026-09-30T09:16:00.903Z",
+  "folderName": "0744-find-smallest-letter-greater-than-target",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0744-find-smallest-letter-greater-than-target/solution.java"
+}

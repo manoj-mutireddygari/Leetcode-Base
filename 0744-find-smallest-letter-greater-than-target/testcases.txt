@@ -1,0 +1,23 @@
+Case 1:
+Status: Passed
+Input:
+letters = ["c","f","j"]
+target = "a"
+Output = "c"
+Expected = "c"
+
+Case 2:
+Status: Passed
+Input:
+letters = ["c","f","j"]
+target = "c"
+Output = "f"
+Expected = "f"
+
+Case 3:
+Status: Passed
+Input:
+letters = ["x","x","y","y"]
+target = "z"
+Output = "x"
+Expected = "x"

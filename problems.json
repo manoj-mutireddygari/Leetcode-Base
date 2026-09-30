@@ -317,6 +317,19 @@
     "folderName": "0541-reverse-string-ii"
   },
   {
+    "id": 744,
+    "title": "Find Smallest Letter Greater Than Target",
+    "slug": "find-smallest-letter-greater-than-target",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "solvedAt": "2026-09-30T09:16:00.903Z",
+    "folderName": "0744-find-smallest-letter-greater-than-target"
+  },
+  {
     "id": 867,
     "title": "Transpose Matrix",
     "slug": "transpose-matrix",
