@@ -194,6 +194,20 @@
     "folderName": "0058-length-of-last-word"
   },
   {
+    "id": 74,
+    "title": "Search a 2D Matrix",
+    "slug": "search-a-2d-matrix",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Matrix"
+    ],
+    "solvedAt": "2026-09-30T09:13:59.941Z",
+    "folderName": "0074-search-a-2d-matrix"
+  },
+  {
     "id": 113,
     "title": "Path Sum II",
     "slug": "path-sum-ii",

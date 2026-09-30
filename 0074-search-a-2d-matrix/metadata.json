@@ -1,0 +1,22 @@
+{
+  "description": "You are given an `m x n` integer matrix `matrix` with the following two properties:\n\n- Each row is sorted in non-decreasing order.\n\n- The first integer of each row is greater than the last integer of the previous row.\n\nGiven an integer `target`, return `true` *if* `target` *is in* `matrix` *or* `false` *otherwise*.\n\nYou must write a solution in `O(log(m * n))` time complexity.\n\nExample 1:\n\n```\n\n**Input:** matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3\n**Output:** true\n\n```\n\nExample 2:\n\n```\n\n**Input:** matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13\n**Output:** false\n\n```\n\n**Constraints:**\n\n- `m == matrix.length`\n\n- `n == matrix[i].length`\n\n- `1 <= m, n <= 100`\n\n- `-10^4 <= matrix[i][j], target <= 10^4`",
+  "difficulty": "Medium",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/search-a-2d-matrix/submissions/2157996908/",
+  "memory": "42.4 MB",
+  "problemId": 74,
+  "runtime": "0 ms",
+  "slug": "search-a-2d-matrix",
+  "sourceCode": "class Solution {\n    public boolean searchMatrix(int[][] matrix, int target) {\n        int n = matrix.length;\n        int m = matrix[0].length;\n\n        int low = 0;\n        int high = n - 1;\n\n        while (low <= high) {\n            int mid = low + (high - low) / 2;\n\n            if (matrix[mid][0] <= target && target <= matrix[mid][m - 1]) {\n                return bs(matrix[mid], target);\n            } \n            else if (target < matrix[mid][0]) {\n                high = mid - 1;\n            } \n            else {\n                low = mid + 1;\n            }\n        }\n\n        return false;\n    }\n\n    public boolean bs(int[] arr, int target) {\n        int low = 0;\n        int high = arr.length - 1;\n\n        while (low <= high) {\n            int mid = low + (high - low) / 2;\n\n            if (arr[mid] == target) {\n                return true;\n            } \n            else if (arr[mid] < target) {\n                low = mid + 1;\n            } \n            else {\n                high = mid - 1;\n            }\n        }\n\n        return false;\n    }\n}",
+  "submittedAt": "2026-09-30T09:13:59.941Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nmatrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]]\ntarget = 3\nOutput = true\nExpected = true\n\nCase 2:\nStatus: Passed\nInput:\nmatrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]]\ntarget = 13\nOutput = false\nExpected = false",
+  "title": "Search a 2D Matrix",
+  "topics": [
+    "Array",
+    "Binary Search",
+    "Matrix"
+  ],
+  "submissionDate": "2026-09-30T09:13:59.941Z",
+  "folderName": "0074-search-a-2d-matrix",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0074-search-a-2d-matrix/solution.java"
+}
