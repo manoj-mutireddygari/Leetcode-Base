@@ -238,6 +238,20 @@
     "folderName": "0199-binary-tree-right-side-view"
   },
   {
+    "id": 217,
+    "title": "Contains Duplicate",
+    "slug": "contains-duplicate",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Sorting"
+    ],
+    "solvedAt": "2026-09-30T09:21:45.890Z",
+    "folderName": "0217-contains-duplicate"
+  },
+  {
     "id": 231,
     "title": "Power of Two",
     "slug": "power-of-two",

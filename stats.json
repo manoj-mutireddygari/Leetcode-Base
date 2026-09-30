@@ -1,6 +1,6 @@
 {
-  "totalSolved": 37,
-  "easy": 21,
+  "totalSolved": 38,
+  "easy": 22,
   "medium": 14,
   "hard": 2,
   "currentStreak": 1,
@@ -8,22 +8,22 @@
   "languages": {
     "python3": 6,
     "javascript": 1,
-    "java": 29,
+    "java": 30,
     "python": 1
   },
   "topics": {
     "Linked List": 4,
     "Math": 11,
     "Recursion": 6,
-    "Array": 12,
-    "Hash Table": 5,
+    "Array": 13,
+    "Hash Table": 6,
     "String": 16,
     "Sliding Window": 2,
     "Binary Search": 6,
     "Divide and Conquer": 1,
     "Matrix": 2,
     "Simulation": 2,
-    "Sorting": 5,
+    "Sorting": 6,
     "Heap (Priority Queue)": 1,
     "Counting Sort": 3,
     "Combinatorics": 1,
@@ -41,10 +41,10 @@
     "Binary Search Tree": 1,
     "Bubble Sort": 1
   },
-  "lastSolved": "2026-09-30T09:20:50.574Z",
+  "lastSolved": "2026-09-30T09:21:45.890Z",
   "monthlySolves": {
     "2026-07": 17,
     "2026-08": 7,
-    "2026-09": 13
+    "2026-09": 14
   }
 }
