@@ -208,6 +208,19 @@
     "folderName": "0344-reverse-string"
   },
   {
+    "id": 374,
+    "title": "Guess Number Higher or Lower",
+    "slug": "guess-number-higher-or-lower",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Binary Search",
+      "Interactive"
+    ],
+    "solvedAt": "2026-09-30T05:24:09.928Z",
+    "folderName": "0374-guess-number-higher-or-lower"
+  },
+  {
     "id": 541,
     "title": "Reverse String II",
     "slug": "reverse-string-ii",

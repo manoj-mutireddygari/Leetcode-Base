@@ -1,0 +1,21 @@
+{
+  "description": "We are playing the Guess Game. The game is as follows:\n\nI pick a number from `1` to `n`. You have to guess which number I picked (the number I picked stays the same throughout the game).\n\nEvery time you guess wrong, I will tell you whether the number I picked is higher or lower than your guess.\n\nYou call a pre-defined API `int guess(int num)`, which returns three possible results:\n\n- `-1`: Your guess is higher than the number I picked (i.e. `num > pick`).\n\n- `1`: Your guess is lower than the number I picked (i.e. `num < pick`).\n\n- `0`: your guess is equal to the number I picked (i.e. `num == pick`).\n\nReturn *the number that I picked*.\n\nExample 1:\n\n```\n\n**Input:** n = 10, pick = 6\n**Output:** 6\n\n```\n\nExample 2:\n\n```\n\n**Input:** n = 1, pick = 1\n**Output:** 1\n\n```\n\nExample 3:\n\n```\n\n**Input:** n = 2, pick = 1\n**Output:** 1\n\n```\n\n**Constraints:**\n\n- `1 <= n <= 2^31 - 1`\n\n- `1 <= pick <= n`",
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/guess-number-higher-or-lower/submissions/2157808387/",
+  "memory": "41.9 MB",
+  "problemId": 374,
+  "runtime": "0 ms",
+  "slug": "guess-number-higher-or-lower",
+  "sourceCode": "/** \n * Forward declaration of guess API.\n * @param  num   your guess\n * @return       -1 if num is higher than the picked number\n *               1 if num is lower than the picked number\n *               otherwise return 0\n * int guess(int num);\n */\npublic class Solution extends GuessGame {\n    public int guessNumber(int n) {\n        int left = 1;\n        int right = n;\n\n        while (left <= right) {\n            int mid = left + (right - left) / 2;\n            int result = guess(mid);\n\n            if (result == 0) {\n                return mid;\n            } else if (result == 1) {\n                left = mid + 1;\n            } else {\n                right = mid - 1;\n            }\n        }\n\n        return -1;\n    }\n}",
+  "submittedAt": "2026-09-30T05:24:09.928Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nn = 10\npick = 6\nOutput = 6\nExpected = 6\n\nCase 2:\nStatus: Passed\nInput:\nn = 1\npick = 1\nOutput = 1\nExpected = 1\n\nCase 3:\nStatus: Passed\nInput:\nn = 2\npick = 1\nOutput = 1\nExpected = 1",
+  "title": "Guess Number Higher or Lower",
+  "topics": [
+    "Binary Search",
+    "Interactive"
+  ],
+  "submissionDate": "2026-09-30T05:24:09.928Z",
+  "folderName": "0374-guess-number-higher-or-lower",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0374-guess-number-higher-or-lower/solution.java"
+}

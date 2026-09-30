@@ -1,6 +1,6 @@
 {
-  "totalSolved": 26,
-  "easy": 13,
+  "totalSolved": 27,
+  "easy": 14,
   "medium": 11,
   "hard": 2,
   "currentStreak": 1,
@@ -8,7 +8,7 @@
   "languages": {
     "python3": 6,
     "javascript": 1,
-    "java": 18,
+    "java": 19,
     "python": 1
   },
   "topics": {
@@ -19,7 +19,7 @@
     "Hash Table": 5,
     "String": 15,
     "Sliding Window": 2,
-    "Binary Search": 1,
+    "Binary Search": 2,
     "Divide and Conquer": 1,
     "Matrix": 1,
     "Simulation": 2,
@@ -31,12 +31,13 @@
     "Two Pointers": 4,
     "Dynamic Programming": 2,
     "Bit Manipulation": 2,
-    "Prefix Sum": 1
+    "Prefix Sum": 1,
+    "Interactive": 1
   },
-  "lastSolved": "2026-09-04T16:17:18.998Z",
+  "lastSolved": "2026-09-30T05:24:09.928Z",
   "monthlySolves": {
     "2026-07": 17,
     "2026-08": 7,
-    "2026-09": 2
+    "2026-09": 3
   }
 }
