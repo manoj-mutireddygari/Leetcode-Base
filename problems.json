@@ -331,6 +331,21 @@
     "folderName": "0905-sort-array-by-parity"
   },
   {
+    "id": 938,
+    "title": "Range Sum of BST",
+    "slug": "range-sum-of-bst",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Binary Search Tree",
+      "Binary Tree"
+    ],
+    "solvedAt": "2026-09-30T06:50:16.706Z",
+    "folderName": "0938-range-sum-of-bst"
+  },
+  {
     "id": 1464,
     "title": "Maximum Product of Two Elements in an Array",
     "slug": "maximum-product-of-two-elements-in-an-array",
