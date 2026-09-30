@@ -221,6 +221,19 @@
     "folderName": "0344-reverse-string"
   },
   {
+    "id": 345,
+    "title": "Reverse Vowels of a String",
+    "slug": "reverse-vowels-of-a-string",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Two Pointers",
+      "String"
+    ],
+    "solvedAt": "2026-09-30T06:45:05.629Z",
+    "folderName": "0345-reverse-vowels-of-a-string"
+  },
+  {
     "id": 367,
     "title": "Valid Perfect Square",
     "slug": "valid-perfect-square",

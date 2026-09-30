@@ -1,0 +1,21 @@
+{
+  "description": "Given a string `s`, reverse only all the vowels in the string and return it.\n\nThe vowels are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`, and they can appear in both lower and upper cases, more than once.\n\nExample 1:\n\n**Input:** s = \"IceCreAm\"\n\n**Output:** \"AceCreIm\"\n\n**Explanation:**\n\nThe vowels in `s` are `['I', 'e', 'e', 'A']`. On reversing the vowels, s becomes `\"AceCreIm\"`.\n\nExample 2:\n\n**Input:** s = \"leetcode\"\n\n**Output:** \"leotcede\"\n\n**Constraints:**\n\n- `1 <= s.length <= 3 * 10^5`\n\n- `s` consist of **printable ASCII** characters.",
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/reverse-vowels-of-a-string/submissions/2157885906/",
+  "memory": "46.9 MB",
+  "problemId": 345,
+  "runtime": "2 ms",
+  "slug": "reverse-vowels-of-a-string",
+  "sourceCode": "class Solution {\n    public String reverseVowels(String s) {\n\n        char[] chars = s.toCharArray();\n\n        int start = 0 ;\n\n        int end = s.length()-1;\n\n        while (start<end){\n            while (start < end && !isVowel(chars[start])) {\n                start++;\n            }\n\n            while (start < end && !isVowel(chars[end])) {\n                end--;\n            }\n\n            if (start < end) {\n                swap(chars, start, end);\n                start++;\n                end--;\n            }\n\n        }\n\n        return new String(chars);\n    }\n\n    private void swap(char[] word, int start, int end){\n        char temp = word[start];\n        word[start] = word[end];\n        word[end] = temp;\n    }\n\n    private boolean isVowel(char c) {\n        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n                || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';\n    }\n}",
+  "submittedAt": "2026-09-30T06:45:05.629Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\ns = \"IceCreAm\"\nOutput = \"AceCreIm\"\nExpected = \"AceCreIm\"\n\nCase 2:\nStatus: Passed\nInput:\ns = \"leetcode\"\nOutput = \"leotcede\"\nExpected = \"leotcede\"",
+  "title": "Reverse Vowels of a String",
+  "topics": [
+    "Two Pointers",
+    "String"
+  ],
+  "submissionDate": "2026-09-30T06:45:05.629Z",
+  "folderName": "0345-reverse-vowels-of-a-string",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0345-reverse-vowels-of-a-string/solution.java"
+}

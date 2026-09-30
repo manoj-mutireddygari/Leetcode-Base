@@ -1,0 +1,13 @@
+Case 1:
+Status: Passed
+Input:
+s = "IceCreAm"
+Output = "AceCreIm"
+Expected = "AceCreIm"
+
+Case 2:
+Status: Passed
+Input:
+s = "leetcode"
+Output = "leotcede"
+Expected = "leotcede"
