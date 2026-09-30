@@ -1,0 +1,21 @@
+{
+  "description": "Koko loves to eat bananas. There are `n` piles of bananas, the `i^th` pile has `piles[i]` bananas. The guards have gone and will come back in `h` hours.\n\nKoko can decide her bananas-per-hour eating speed of `k`. Each hour, she chooses some pile of bananas and eats `k` bananas from that pile. If the pile has less than `k` bananas, she eats all of them instead and will not eat any more bananas during this hour.\n\nKoko likes to eat slowly but still wants to finish eating all the bananas before the guards return.\n\nReturn *the minimum integer* `k` *such that she can eat all the bananas within* `h` *hours*.\n\nExample 1:\n\n```\n\n**Input:** piles = [3,6,7,11], h = 8\n**Output:** 4\n\n```\n\nExample 2:\n\n```\n\n**Input:** piles = [30,11,23,4,20], h = 5\n**Output:** 30\n\n```\n\nExample 3:\n\n```\n\n**Input:** piles = [30,11,23,4,20], h = 6\n**Output:** 23\n\n```\n\n**Constraints:**\n\n- `1 <= piles.length <= 10^4`\n\n- `piles.length <= h <= 10^9`\n\n- `1 <= piles[i] <= 10^9`",
+  "difficulty": "Medium",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/koko-eating-bananas/submissions/2158006046/",
+  "memory": "48.4 MB",
+  "problemId": 875,
+  "runtime": "14 ms",
+  "slug": "koko-eating-bananas",
+  "sourceCode": "public class Solution {\n    public int minEatingSpeed(int[] piles, int h) {\n        int left = 1;  \n        int right = Arrays.stream(piles).max().getAsInt();\n        int ans = right;\n\n        while (left <= right) {\n            int mid = left + (right - left) / 2;\n            if (canFinish(piles, h, mid)) {\n                ans = mid;     \n                right = mid - 1;\n            } else {\n                left = mid + 1; \n            }\n        }\n        return ans;\n    }\n\n    public boolean canFinish(int[] piles, int h, int k) {\n        long hours = 0;\n        for (int pile : piles) {\n            hours += pile / k;\n            if (pile % k != 0) hours++;\n        }\n        return hours <= h;\n    }\n}",
+  "submittedAt": "2026-09-30T09:24:32.811Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\npiles = [3,6,7,11]\nh = 8\nOutput = 4\nExpected = 4\n\nCase 2:\nStatus: Passed\nInput:\npiles = [30,11,23,4,20]\nh = 5\nOutput = 30\nExpected = 30\n\nCase 3:\nStatus: Passed\nInput:\npiles = [30,11,23,4,20]\nh = 6\nOutput = 23\nExpected = 23",
+  "title": "Koko Eating Bananas",
+  "topics": [
+    "Array",
+    "Binary Search"
+  ],
+  "submissionDate": "2026-09-30T09:24:32.811Z",
+  "folderName": "0875-koko-eating-bananas",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0875-koko-eating-bananas/solution.java"
+}
