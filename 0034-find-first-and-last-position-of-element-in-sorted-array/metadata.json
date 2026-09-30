@@ -1,0 +1,21 @@
+{
+  "description": "Given an array of integers `nums` sorted in non-decreasing order, find the starting and ending position of a given `target` value.\n\nIf `target` is not found in the array, return `[-1, -1]`.\n\nYou must write an algorithm with `O(log n)` runtime complexity.\n\nExample 1:\n\n```\n**Input:** nums = [5,7,7,8,8,10], target = 8\n**Output:** [3,4]\n\n```\n\nExample 2:\n\n```\n**Input:** nums = [5,7,7,8,8,10], target = 6\n**Output:** [-1,-1]\n\n```\n\nExample 3:\n\n```\n**Input:** nums = [], target = 0\n**Output:** [-1,-1]\n\n```\n\n**Constraints:**\n\n- `0 <= nums.length <= 10^5`\n\n- `-10^9 <= nums[i] <= 10^9`\n\n- `nums` is a non-decreasing array.\n\n- `-10^9 <= target <= 10^9`",
+  "difficulty": "Medium",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/2158008622/",
+  "memory": "42.6 MB",
+  "problemId": 34,
+  "runtime": "0 ms",
+  "slug": "find-first-and-last-position-of-element-in-sorted-array",
+  "sourceCode": "class Solution {\n    public int[] searchRange(int[] nums, int target) {\n        int[] result = {-1, -1};\n        int left = binarySearch(nums, target, true);\n        int right = binarySearch(nums, target, false);\n        result[0] = left;\n        result[1] = right;\n        return result;        \n    }\n\n    private int binarySearch(int[] nums, int target, boolean isSearchingLeft) {\n        int left = 0;\n        int right = nums.length - 1;\n        int idx = -1;\n\n        while (left <= right) {\n            int mid = left + (right - left) / 2;\n            \n            if (nums[mid] > target) {\n                right = mid - 1;\n            } else if (nums[mid] < target) {\n                left = mid + 1;\n            } else {\n                idx = mid;\n                if (isSearchingLeft) {\n                    right = mid - 1;\n                } else {\n                    left = mid + 1;\n                }\n            }\n        }\n\n        return idx;\n    }\n\n}",
+  "submittedAt": "2026-09-30T09:27:26.867Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nnums = [5,7,7,8,8,10]\ntarget = 8\nOutput = [3,4]\nExpected = [3,4]\n\nCase 2:\nStatus: Passed\nInput:\nnums = [5,7,7,8,8,10]\ntarget = 6\nOutput = [-1,-1]\nExpected = [-1,-1]\n\nCase 3:\nStatus: Passed\nInput:\nnums = []\ntarget = 0\nOutput = [-1,-1]\nExpected = [-1,-1]",
+  "title": "Find First and Last Position of Element in Sorted Array",
+  "topics": [
+    "Array",
+    "Binary Search"
+  ],
+  "submissionDate": "2026-09-30T09:27:26.867Z",
+  "folderName": "0034-find-first-and-last-position-of-element-in-sorted-array",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0034-find-first-and-last-position-of-element-in-sorted-array/solution.java"
+}
