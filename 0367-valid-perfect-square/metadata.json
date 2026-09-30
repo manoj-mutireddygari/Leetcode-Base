@@ -1,0 +1,21 @@
+{
+  "description": "Given a positive integer num, return `true` *if* `num` *is a perfect square or* `false` *otherwise*.\n\nA **perfect square** is an integer that is the square of an integer. In other words, it is the product of some integer with itself.\n\nYou must not use any built-in library function, such as `sqrt`.\n\nExample 1:\n\n```\n\n**Input:** num = 16\n**Output:** true\n**Explanation:** We return true because 4 * 4 = 16 and 4 is an integer.\n\n```\n\nExample 2:\n\n```\n\n**Input:** num = 14\n**Output:** false\n**Explanation:** We return false because 3.742 * 3.742 = 14 and 3.742 is not an integer.\n\n```\n\n**Constraints:**\n\n- `1 <= num <= 2^31 - 1`",
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/valid-perfect-square/submissions/2157848521/",
+  "memory": "41.9 MB",
+  "problemId": 367,
+  "runtime": "0 ms",
+  "slug": "valid-perfect-square",
+  "sourceCode": "class Solution {\n    public boolean isPerfectSquare(int num) {\n        long low = 1;\n        long high = num;\n        while (low<=high) {\n            long mid = low + (high - low)/2;\n            long sq = mid * mid;\n            if (sq == num) return true;\n            if (sq < num) low = mid + 1;\n            else high = mid - 1;\n        }\n        return false;\n    }\n}",
+  "submittedAt": "2026-09-30T06:07:38.550Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nnum = 16\nOutput = true\nExpected = true\n\nCase 2:\nStatus: Passed\nInput:\nnum = 14\nOutput = false\nExpected = false",
+  "title": "Valid Perfect Square",
+  "topics": [
+    "Math",
+    "Binary Search"
+  ],
+  "submissionDate": "2026-09-30T06:07:38.550Z",
+  "folderName": "0367-valid-perfect-square",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0367-valid-perfect-square/solution.java"
+}

@@ -221,6 +221,19 @@
     "folderName": "0344-reverse-string"
   },
   {
+    "id": 367,
+    "title": "Valid Perfect Square",
+    "slug": "valid-perfect-square",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Math",
+      "Binary Search"
+    ],
+    "solvedAt": "2026-09-30T06:07:38.550Z",
+    "folderName": "0367-valid-perfect-square"
+  },
+  {
     "id": 374,
     "title": "Guess Number Higher or Lower",
     "slug": "guess-number-higher-or-lower",
