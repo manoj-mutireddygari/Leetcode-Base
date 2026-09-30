@@ -1,0 +1,23 @@
+{
+  "description": "Given the `root` of a binary tree and an integer `targetSum`, return *all **root-to-leaf** paths where the sum of the node values in the path equals *`targetSum`*. Each path should be returned as a list of the node **values**, not node references*.\n\nA **root-to-leaf** path is a path starting from the root and ending at any leaf node. A **leaf** is a node with no children.\n\nExample 1:\n\n```\n\n**Input:** root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22\n**Output:** [[5,4,11,2],[5,8,4,5]]\n**Explanation:** There are two paths whose sum equals targetSum:\n5 + 4 + 11 + 2 = 22\n5 + 8 + 4 + 5 = 22\n\n```\n\nExample 2:\n\n```\n\n**Input:** root = [1,2,3], targetSum = 5\n**Output:** []\n\n```\n\nExample 3:\n\n```\n\n**Input:** root = [1,2], targetSum = 0\n**Output:** []\n\n```\n\n**Constraints:**\n\n- The number of nodes in the tree is in the range `[0, 5000]`.\n\n- `-1000 <= Node.val <= 1000`\n\n- `-1000 <= targetSum <= 1000`",
+  "difficulty": "Medium",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/path-sum-ii/submissions/2157889239/",
+  "memory": "45.7 MB",
+  "problemId": 113,
+  "runtime": "1 ms",
+  "slug": "path-sum-ii",
+  "sourceCode": "class Solution {\n    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {\n        ArrayList<List<Integer>> li = new ArrayList<>();\n        ArrayList<Integer> a = new ArrayList<>();\n        dfs(root,targetSum,0,li,a);\n        return li;\n    }\n    void dfs(TreeNode root, int targetSum,int sum,List<List<Integer>> li,List<Integer> a ){\n        if(root==null){\n            return;\n        }\n        sum +=root.val;\n        a.add(root.val);\n        if(root.left==null&&root.right==null && sum==targetSum){\n            li.add(new ArrayList<>(a));\n        }\n        dfs(root.left,targetSum,sum,li,a);\n        dfs(root.right,targetSum,sum,li,a);\n        a.remove(a.size()-1);\n    }\n}",
+  "submittedAt": "2026-09-30T06:48:41.291Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nroot = [5,4,8,11,null,13,4,7,2,null,null,5,1]\ntargetSum = 22\nOutput = [[5,4,11,2],[5,8,4,5]]\nExpected = [[5,4,11,2],[5,8,4,5]]\n\nCase 2:\nStatus: Passed\nInput:\nroot = [1,2,3]\ntargetSum = 5\nOutput = []\nExpected = []\n\nCase 3:\nStatus: Passed\nInput:\nroot = [1,2]\ntargetSum = 0\nOutput = []\nExpected = []",
+  "title": "Path Sum II",
+  "topics": [
+    "Backtracking",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "submissionDate": "2026-09-30T06:48:41.291Z",
+  "folderName": "0113-path-sum-ii",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0113-path-sum-ii/solution.java"
+}

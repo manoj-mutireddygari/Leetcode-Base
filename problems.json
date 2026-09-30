@@ -194,6 +194,21 @@
     "folderName": "0058-length-of-last-word"
   },
   {
+    "id": 113,
+    "title": "Path Sum II",
+    "slug": "path-sum-ii",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Backtracking",
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "solvedAt": "2026-09-30T06:48:41.291Z",
+    "folderName": "0113-path-sum-ii"
+  },
+  {
     "id": 199,
     "title": "Binary Tree Right Side View",
     "slug": "binary-tree-right-side-view",
