@@ -344,6 +344,20 @@
     "folderName": "0374-guess-number-higher-or-lower"
   },
   {
+    "id": 450,
+    "title": "Delete Node in a BST",
+    "slug": "delete-node-in-a-bst",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Tree",
+      "Binary Search Tree",
+      "Binary Tree"
+    ],
+    "solvedAt": "2026-10-01T06:39:46.677Z",
+    "folderName": "0450-delete-node-in-a-bst"
+  },
+  {
     "id": 541,
     "title": "Reverse String II",
     "slug": "reverse-string-ii",
