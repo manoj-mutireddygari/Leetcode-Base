@@ -1,0 +1,20 @@
+Case 1:
+Status: Passed
+Input:
+s = "A man, a plan, a canal: Panama"
+Output = true
+Expected = true
+
+Case 2:
+Status: Passed
+Input:
+s = "race a car"
+Output = false
+Expected = false
+
+Case 3:
+Status: Passed
+Input:
+s = " "
+Output = true
+Expected = true

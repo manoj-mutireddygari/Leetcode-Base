@@ -1,0 +1,21 @@
+{
+  "description": "A phrase is a **palindrome** if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.\n\nGiven a string `s`, return `true`* if it is a **palindrome**, or *`false`* otherwise*.\n\nExample 1:\n\n```\n\n**Input:** s = \"A man, a plan, a canal: Panama\"\n**Output:** true\n**Explanation:** \"amanaplanacanalpanama\" is a palindrome.\n\n```\n\nExample 2:\n\n```\n\n**Input:** s = \"race a car\"\n**Output:** false\n**Explanation:** \"raceacar\" is not a palindrome.\n\n```\n\nExample 3:\n\n```\n\n**Input:** s = \" \"\n**Output:** true\n**Explanation:** s is an empty string \"\" after removing non-alphanumeric characters.\nSince an empty string reads the same forward and backward, it is a palindrome.\n\n```\n\n**Constraints:**\n\n- `1 <= s.length <= 2 * 10^5`\n\n- `s` consists only of printable ASCII characters.",
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/valid-palindrome/submissions/2158780182/",
+  "memory": "46.2 MB",
+  "problemId": 125,
+  "runtime": "14 ms",
+  "slug": "valid-palindrome",
+  "sourceCode": "class Solution {\n    public boolean isPalindrome(String s) {\n        s = s.toLowerCase().replaceAll(\"[^a-z0-9]\", \"\");\n        int left = 0;\n        int right = s.length() - 1;\n\n        while (left < right) {\n            if (s.charAt(left) != s.charAt(right)) {\n                return false;\n            }\n            left++;\n            right--;\n        }\n        return true;        \n    }\n}",
+  "submittedAt": "2026-10-01T04:24:18.606Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\ns = \"A man, a plan, a canal: Panama\"\nOutput = true\nExpected = true\n\nCase 2:\nStatus: Passed\nInput:\ns = \"race a car\"\nOutput = false\nExpected = false\n\nCase 3:\nStatus: Passed\nInput:\ns = \" \"\nOutput = true\nExpected = true",
+  "title": "Valid Palindrome",
+  "topics": [
+    "Two Pointers",
+    "String"
+  ],
+  "submissionDate": "2026-10-01T04:24:18.606Z",
+  "folderName": "0125-valid-palindrome",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0125-valid-palindrome/solution.java"
+}

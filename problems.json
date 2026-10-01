@@ -236,6 +236,19 @@
     "folderName": "0113-path-sum-ii"
   },
   {
+    "id": 125,
+    "title": "Valid Palindrome",
+    "slug": "valid-palindrome",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Two Pointers",
+      "String"
+    ],
+    "solvedAt": "2026-10-01T04:24:18.606Z",
+    "folderName": "0125-valid-palindrome"
+  },
+  {
     "id": 199,
     "title": "Binary Tree Right Side View",
     "slug": "binary-tree-right-side-view",
