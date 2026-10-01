@@ -1,0 +1,22 @@
+{
+  "description": "Given an array of positive integers `nums`, remove the **smallest** subarray (possibly **empty**) such that the **sum** of the remaining elements is divisible by `p`. It is **not** allowed to remove the whole array.\n\nReturn *the length of the smallest subarray that you need to remove, or *`-1`* if it's impossible*.\n\nA **subarray** is defined as a contiguous block of elements in the array.\n\nExample 1:\n\n```\n\n**Input:** nums = [3,1,4,2], p = 6\n**Output:** 1\n**Explanation:** The sum of the elements in nums is 10, which is not divisible by 6. We can remove the subarray [4], and the sum of the remaining elements is 6, which is divisible by 6.\n\n```\n\nExample 2:\n\n```\n\n**Input:** nums = [6,3,5,2], p = 9\n**Output:** 2\n**Explanation:** We cannot remove a single element to get a sum divisible by 9. The best way is to remove the subarray [5,2], leaving us with [6,3] with sum 9.\n\n```\n\nExample 3:\n\n```\n\n**Input:** nums = [1,2,3], p = 3\n**Output:** 0\n**Explanation:** Here the sum is 6. which is already divisible by 3. Thus we do not need to remove anything.\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 10^5`\n\n- `1 <= nums[i] <= 10^9`\n\n- `1 <= p <= 10^9`",
+  "difficulty": "Medium",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/make-sum-divisible-by-p/submissions/2159021959/",
+  "memory": "98.4 MB",
+  "problemId": 1590,
+  "runtime": "26 ms",
+  "slug": "make-sum-divisible-by-p",
+  "sourceCode": "import java.util.HashMap;\n\nclass Solution {\n    public int minSubarray(int[] nums, int p) {\n        long totalSum = 0;\n        for (int num : nums) {\n            totalSum += num;\n        }\n\n        // Find remainder when total sum is divided by p\n        int rem = (int)(totalSum % p);\n        if (rem == 0) return 0; // If remainder is 0, no subarray needs to be removed\n\n        HashMap<Integer, Integer> prefixMod = new HashMap<>();\n        prefixMod.put(0, -1);  // Initialize to handle full prefix\n        long prefixSum = 0;\n        int minLength = nums.length;\n\n        for (int i = 0; i < nums.length; ++i) {\n            prefixSum += nums[i];\n            int currentMod = (int)(prefixSum % p);\n            int targetMod = (currentMod - rem + p) % p;\n\n            if (prefixMod.containsKey(targetMod)) {\n                minLength = Math.min(minLength, i - prefixMod.get(targetMod));\n            }\n\n            prefixMod.put(currentMod, i);\n        }\n\n        return minLength == nums.length ? -1 : minLength;\n    }\n}",
+  "submittedAt": "2026-10-01T08:52:10.368Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nnums = [3,1,4,2]\np = 6\nOutput = 1\nExpected = 1\n\nCase 2:\nStatus: Passed\nInput:\nnums = [6,3,5,2]\np = 9\nOutput = 2\nExpected = 2\n\nCase 3:\nStatus: Passed\nInput:\nnums = [1,2,3]\np = 3\nOutput = 0\nExpected = 0",
+  "title": "Make Sum Divisible by P",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "submissionDate": "2026-10-01T08:52:10.368Z",
+  "folderName": "1590-make-sum-divisible-by-p",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/1590-make-sum-divisible-by-p/solution.java"
+}

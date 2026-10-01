@@ -1,0 +1,23 @@
+Case 1:
+Status: Passed
+Input:
+nums = [3,1,4,2]
+p = 6
+Output = 1
+Expected = 1
+
+Case 2:
+Status: Passed
+Input:
+nums = [6,3,5,2]
+p = 9
+Output = 2
+Expected = 2
+
+Case 3:
+Status: Passed
+Input:
+nums = [1,2,3]
+p = 3
+Output = 0
+Expected = 0

@@ -546,6 +546,20 @@
     "folderName": "1464-maximum-product-of-two-elements-in-an-array"
   },
   {
+    "id": 1590,
+    "title": "Make Sum Divisible by P",
+    "slug": "make-sum-divisible-by-p",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Prefix Sum"
+    ],
+    "solvedAt": "2026-10-01T08:52:10.368Z",
+    "folderName": "1590-make-sum-divisible-by-p"
+  },
+  {
     "id": 1652,
     "title": "Defuse the Bomb",
     "slug": "defuse-the-bomb",
