@@ -488,6 +488,19 @@
     "folderName": "1464-maximum-product-of-two-elements-in-an-array"
   },
   {
+    "id": 1768,
+    "title": "Merge Strings Alternately",
+    "slug": "merge-strings-alternately",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Two Pointers",
+      "String"
+    ],
+    "solvedAt": "2026-10-01T04:22:00.877Z",
+    "folderName": "1768-merge-strings-alternately"
+  },
+  {
     "id": 1929,
     "title": "Concatenation of Array",
     "slug": "concatenation-of-array",
