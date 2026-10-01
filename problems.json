@@ -503,6 +503,23 @@
     "folderName": "0973-k-closest-points-to-origin"
   },
   {
+    "id": 976,
+    "title": "Largest Perimeter Triangle",
+    "slug": "largest-perimeter-triangle",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Math",
+      "Greedy",
+      "Sorting",
+      "Quicksort",
+      "Polygons"
+    ],
+    "solvedAt": "2026-10-01T10:02:46.872Z",
+    "folderName": "0976-largest-perimeter-triangle"
+  },
+  {
     "id": 977,
     "title": "Squares of a Sorted Array",
     "slug": "squares-of-a-sorted-array",
