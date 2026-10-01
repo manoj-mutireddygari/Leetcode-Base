@@ -1,0 +1,23 @@
+Case 1:
+Status: Passed
+Input:
+code = [5,7,1,4]
+k = 3
+Output = [12,10,16,13]
+Expected = [12,10,16,13]
+
+Case 2:
+Status: Passed
+Input:
+code = [1,2,3,4]
+k = 0
+Output = [0,0,0,0]
+Expected = [0,0,0,0]
+
+Case 3:
+Status: Passed
+Input:
+code = [2,4,9,3]
+k = -2
+Output = [12,5,6,13]
+Expected = [12,5,6,13]

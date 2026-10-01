@@ -532,6 +532,19 @@
     "folderName": "1464-maximum-product-of-two-elements-in-an-array"
   },
   {
+    "id": 1652,
+    "title": "Defuse the Bomb",
+    "slug": "defuse-the-bomb",
+    "difficulty": "Easy",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Sliding Window"
+    ],
+    "solvedAt": "2026-10-01T06:43:40.054Z",
+    "folderName": "1652-defuse-the-bomb"
+  },
+  {
     "id": 1768,
     "title": "Merge Strings Alternately",
     "slug": "merge-strings-alternately",

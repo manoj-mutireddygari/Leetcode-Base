@@ -1,0 +1,21 @@
+{
+  "description": "You have a bomb to defuse, and your time is running out! Your informer will provide you with a **circular** array `code` of length of `n` and a key `k`.\n\nTo decrypt the code, you must replace every number. All the numbers are replaced **simultaneously**.\n\n- If `k > 0`, replace the `i^th` number with the sum of the **next** `k` numbers.\n\n- If `k < 0`, replace the `i^th` number with the sum of the **previous** -`k` numbers.\n\n- If `k == 0`, replace the `i^th` number with `0`.\n\nAs `code` is circular, the next element of `code[n-1]` is `code[0]`, and the previous element of `code[0]` is `code[n-1]`.\n\nGiven the **circular** array `code` and an integer key `k`, return *the decrypted code to defuse the bomb*!\n\nExample 1:\n\n```\n\n**Input:** code = [5,7,1,4], k = 3\n**Output:** [12,10,16,13]\n**Explanation:** Each number is replaced by the sum of the next 3 numbers. The decrypted code is [7+1+4, 1+4+5, 4+5+7, 5+7+1]. Notice that the numbers wrap around.\n\n```\n\nExample 2:\n\n```\n\n**Input:** code = [1,2,3,4], k = 0\n**Output:** [0,0,0,0]\n**Explanation:** When k is zero, the numbers are replaced by 0.\n\n```\n\nExample 3:\n\n```\n\n**Input:** code = [2,4,9,3], k = -2\n**Output:** [12,5,6,13]\n**Explanation:** The decrypted code is [3+9, 2+3, 4+2, 9+4]. Notice that the numbers wrap around again. If k is negative, the sum is of the **previous** numbers.\n\n```\n\n**Constraints:**\n\n- `n == code.length`\n\n- `1 <= n <= 100`\n\n- `1 <= code[i] <= 100`\n\n- `-(n - 1) <= k <= n - 1`",
+  "difficulty": "Easy",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/defuse-the-bomb/submissions/2158921885/",
+  "memory": "44.1 MB",
+  "problemId": 1652,
+  "runtime": "2 ms",
+  "slug": "defuse-the-bomb",
+  "sourceCode": "class Solution {\n    public int[] decrypt(int[] code, int k) {\n        int n=code.length;\n        int[] arr=new int[n];\n        int sum=0;\n        int count=0;\n        if(k==0){\n            Arrays.fill(arr,0);\n        }\n        else if(k>0){\n            for(int i=0;i<n;i++){\n                int j=i+1;\n                while(count!=k){\n                    if(j==n){\n                        j=0;\n                    }\n                    sum+=code[j];\n                    count++; \n                    j++;\n                }\n                arr[i]=sum;\n                sum=0;\n                count=0;\n            }\n        }\n        else{\n            k=k*-1;\n            for(int i=0;i<n;i++){\n                int j=i-1;\n                if(i==0){\n                    j=n-1;\n                }\n                while(count!=k){\n                    if(j<0){\n                        j=n-1;\n                    }\n                    sum+=code[j];\n                    count++;\n                    j--;\n                }\n                arr[i]=sum;\n                sum=0;\n                count=0;\n            }\n        }\n        return arr;\n    }\n}",
+  "submittedAt": "2026-10-01T06:43:40.054Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\ncode = [5,7,1,4]\nk = 3\nOutput = [12,10,16,13]\nExpected = [12,10,16,13]\n\nCase 2:\nStatus: Passed\nInput:\ncode = [1,2,3,4]\nk = 0\nOutput = [0,0,0,0]\nExpected = [0,0,0,0]\n\nCase 3:\nStatus: Passed\nInput:\ncode = [2,4,9,3]\nk = -2\nOutput = [12,5,6,13]\nExpected = [12,5,6,13]",
+  "title": "Defuse the Bomb",
+  "topics": [
+    "Array",
+    "Sliding Window"
+  ],
+  "submissionDate": "2026-10-01T06:43:40.054Z",
+  "folderName": "1652-defuse-the-bomb",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/1652-defuse-the-bomb/solution.java"
+}
