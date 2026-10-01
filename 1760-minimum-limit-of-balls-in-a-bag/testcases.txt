@@ -1,0 +1,15 @@
+Case 1:
+Status: Passed
+Input:
+nums = [9]
+maxOperations = 2
+Output = 3
+Expected = 3
+
+Case 2:
+Status: Passed
+Input:
+nums = [2,4,8,2]
+maxOperations = 4
+Output = 2
+Expected = 2

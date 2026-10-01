@@ -573,6 +573,19 @@
     "folderName": "1652-defuse-the-bomb"
   },
   {
+    "id": 1760,
+    "title": "Minimum Limit of Balls in a Bag",
+    "slug": "minimum-limit-of-balls-in-a-bag",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "solvedAt": "2026-10-01T10:01:06.658Z",
+    "folderName": "1760-minimum-limit-of-balls-in-a-bag"
+  },
+  {
     "id": 1768,
     "title": "Merge Strings Alternately",
     "slug": "merge-strings-alternately",
