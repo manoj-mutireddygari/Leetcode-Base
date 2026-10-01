@@ -388,6 +388,20 @@
     "folderName": "0541-reverse-string-ii"
   },
   {
+    "id": 560,
+    "title": "Subarray Sum Equals K",
+    "slug": "subarray-sum-equals-k",
+    "difficulty": "Medium",
+    "language": "java",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Prefix Sum"
+    ],
+    "solvedAt": "2026-10-01T06:45:41.325Z",
+    "folderName": "0560-subarray-sum-equals-k"
+  },
+  {
     "id": 643,
     "title": "Maximum Average Subarray I",
     "slug": "maximum-average-subarray-i",

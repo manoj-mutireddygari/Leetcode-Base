@@ -1,22 +1,22 @@
 {
-  "totalSolved": 48,
+  "totalSolved": 49,
   "easy": 27,
-  "medium": 19,
+  "medium": 20,
   "hard": 2,
   "currentStreak": 2,
   "longestStreak": 4,
   "languages": {
     "python3": 6,
     "javascript": 1,
-    "java": 40,
+    "java": 41,
     "python": 1
   },
   "topics": {
     "Linked List": 4,
     "Math": 12,
     "Recursion": 6,
-    "Array": 19,
-    "Hash Table": 6,
+    "Array": 20,
+    "Hash Table": 7,
     "String": 18,
     "Sliding Window": 4,
     "Binary Search": 8,
@@ -31,7 +31,7 @@
     "Two Pointers": 9,
     "Dynamic Programming": 2,
     "Bit Manipulation": 2,
-    "Prefix Sum": 1,
+    "Prefix Sum": 2,
     "Interactive": 1,
     "Tree": 5,
     "Depth-First Search": 4,
@@ -46,11 +46,11 @@
     "Binary Lifting": 1,
     "Lowest Common Ancestor": 1
   },
-  "lastSolved": "2026-10-01T06:43:40.054Z",
+  "lastSolved": "2026-10-01T06:45:41.325Z",
   "monthlySolves": {
     "2026-07": 17,
     "2026-08": 7,
     "2026-09": 19,
-    "2026-10": 5
+    "2026-10": 6
   }
 }

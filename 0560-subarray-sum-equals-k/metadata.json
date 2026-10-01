@@ -1,0 +1,22 @@
+{
+  "description": "Given an array of integers `nums` and an integer `k`, return *the total number of subarrays whose sum equals to* `k`.\n\nA subarray is a contiguous **non-empty** sequence of elements within an array.\n\nExample 1:\n\n```\n**Input:** nums = [1,1,1], k = 2\n**Output:** 2\n\n```\n\nExample 2:\n\n```\n**Input:** nums = [1,2,3], k = 3\n**Output:** 2\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 2 * 10^4`\n\n- `-1000 <= nums[i] <= 1000`\n\n- `-10^7 <= k <= 10^7`",
+  "difficulty": "Medium",
+  "language": "java",
+  "leetCodeUrl": "https://leetcode.com/problems/subarray-sum-equals-k/submissions/2158923895/",
+  "memory": "49 MB",
+  "problemId": 560,
+  "runtime": "24 ms",
+  "slug": "subarray-sum-equals-k",
+  "sourceCode": "class Solution {\n    public int subarraySum(int[] nums, int k) {\n        HashMap<Integer, Integer> subNum = new HashMap<>();\n        subNum.put(0, 1);\n        int total = 0, count = 0;\n\n        for (int n : nums) {\n            total += n;\n\n            if (subNum.containsKey(total - k)) {\n                count += subNum.get(total - k);\n            }\n\n            subNum.put(total, subNum.getOrDefault(total, 0) + 1);\n        }\n\n        return count;        \n    }\n}",
+  "submittedAt": "2026-10-01T06:45:41.325Z",
+  "testCases": "Case 1:\nStatus: Passed\nInput:\nnums = [1,1,1]\nk = 2\nOutput = 2\nExpected = 2\n\nCase 2:\nStatus: Passed\nInput:\nnums = [1,2,3]\nk = 3\nOutput = 2\nExpected = 2",
+  "title": "Subarray Sum Equals K",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "submissionDate": "2026-10-01T06:45:41.325Z",
+  "folderName": "0560-subarray-sum-equals-k",
+  "githubUrl": "https://github.com/manoj-mutireddygari/Leetcode-Base/blob/main/0560-subarray-sum-equals-k/solution.java"
+}
